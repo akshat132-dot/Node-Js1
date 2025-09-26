@@ -1,0 +1,18 @@
+{
+  "name": "employee-cli",
+  "version": "1.0.0",
+  "description": "Simple Node.js CLI for managing employees in-memory using arrays and readline",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test:quick": "node -e \"const m=require('./lib/employees'); m.addEmployee('1','Alice'); m.addEmployee('2','Bob'); console.log('Count', m.getEmployees().length); m.removeEmployee('1'); console.log('AfterRemove', m.getEmployees().map(e=>e.id).join(','));\""
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "readline",
+    "employees"
+  ],
+  "author": "",
+  "license": "MIT"
+}
